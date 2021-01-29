@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFEB3B</color>
+    <color name="purple_500">#FFC107</color>
+    <color name="purple_700">#FF9800</color>
+    <color name="teal_200">#DF7C04</color>
+    <color name="teal_700">#EC6803</color>
+
+
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Mode Colour palette -->
+    <color name="backgroundColor">#FCFCFC</color>
+    <color name="cardColor">#F4F2F2</color>
+    <color name="textColor">#000000</color>
+</resources>

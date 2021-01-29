@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Paint Scheme Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_sample_data">Add sample data</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_miniatures">Delete all Miniatures</string>
+    <string name="new_paint_scheme">New Paint Scheme</string>
+    <string name="edit_paint_scheme">Edit Paint Scheme</string>
+    <string name="enter_paint_scheme_name">Enter paint scheme name</string>
+    <string name="enter_paint_scheme_used_paints">Enter used paints</string>
+    <string name="enter_paint_scheme_techniques">Enter used techniques</string>
+    <string name="enter_paint_scheme_paint_method">Enter paint method</string>
+    <string name="enter_paint_scheme_model_used">Enter model used</string>
+    <string name="toggle_dark_mode">Toggle dark mode</string>
+    <string name="toggle_light_mode">Toggle light mode</string>
+    <string name="textview">TextView</string>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="EditorFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/variableImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="462dp"-->
+<!--            android:src="@drawable/mephiston"-->
+<!--            tools:ignore="ContentDescription">-->
+
+<!--        </ImageView>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="2">-->
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="256dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--    -->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/mephistonimg2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/mephiston"-->
+<!--            app:layout_constraintStart_toEndOf="@id/mephistonimg1"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/mephistonimg3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srcCompat="@drawable/mephiston"-->
+<!--            app:layout_constraintStart_toEndOf="@id/mephistonimg2"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/mephistonimg4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintStart_toEndOf="@id/mephistonimg3"-->
+<!--                app:srcCompat="@drawable/mephiston"/>-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--        </HorizontalScrollView>-->
+<!--        </RelativeLayout>-->
+
+        <EditText
+        android:id="@+id/nameEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/usedPaintsEditor"
+        android:paddingStart="12dp"
+        android:textColor="@color/textColor"
+        android:background="@color/cardColor"
+        android:layout_marginTop="20dp"
+        android:hint= "@string/enter_paint_scheme_name"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:ignore="Autofill,RtlSymmetry"
+        tools:text="Hello"/>
+    <EditText
+        android:id="@+id/usedPaintsEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:textColor="@color/textColor"
+        android:background="@color/cardColor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/techniquesEditor"
+        android:hint="@string/enter_paint_scheme_used_paints"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:ignore="Autofill,RtlSymmetry"
+        tools:text="Hello"/>
+    <EditText
+        android:id="@+id/techniquesEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:background="@color/cardColor"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/paintMethodEditor"
+        android:hint="@string/enter_paint_scheme_techniques"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:ignore="Autofill,RtlSymmetry"
+        tools:text="Hello"/>
+    <EditText
+        android:id="@+id/paintMethodEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:textColor="@color/textColor"
+        android:background="@color/cardColor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/modelUsedEditor"
+        android:hint="@string/enter_paint_scheme_paint_method"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:ignore="Autofill,RtlSymmetry"
+        tools:text="Hello"/>
+    <EditText
+        android:id="@+id/modelUsedEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:textColor="@color/textColor"
+        android:background="@color/cardColor"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/enter_paint_scheme_model_used"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:ignore="Autofill,RtlSymmetry"
+        tools:text="Hello"/>
+
+
+</LinearLayout>
+
+</ScrollView>
