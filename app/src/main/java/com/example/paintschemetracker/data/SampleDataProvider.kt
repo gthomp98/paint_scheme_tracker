@@ -3,7 +3,7 @@ package com.example.paintschemetracker.data
 import java.util.*
 
 class SampleDataProvider {
-
+//This is the sample data provider, here, 3 data objedcts that are examples of the format of the data, are generated and added to the database via the item menu
     companion object{
         private val sampleMiniature1 = "Blood Angels paint scheme"
         private val sampleMiniature2 = "Custodian Guard"
@@ -12,7 +12,7 @@ class SampleDataProvider {
         private fun getDate(diff: Long): Date{
             return Date(Date().time+diff)
         }
-
+//this is an array list that contains 3 data objects that are each a paint scheme object
         fun getMiniatures() = arrayListOf(
             MiniatureEntity(sampleMiniature1,
                 "Black primer, Vallejo fire red, Citadel Troll Slayer Orange, Vallejo metal colour gold, vallejo metal colour silver, vallejo matte black, vallejo pure white, P3 ordic olive, pro acryl olive flesh",
@@ -48,7 +48,7 @@ class SampleDataProvider {
                         "Step 6: paint the shoulder pad and head first with zandri dust to create a base followed by pale sand, finally highlighted with pure white" +
                         "Step 7: paint staff with a silver blade and glaze red over it "+
                         "Step 8 : paint any accents with vallejo metal colour copper",
-                "Custodian Guard"),
+                "Eldar Farseer"),
         )
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    these are the night mode colours-->
     <color name="purple_200">#FFEB3B</color>
     <color name="purple_500">#FFC107</color>
     <color name="purple_700">#FF9800</color>

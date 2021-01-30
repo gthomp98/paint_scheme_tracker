@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the list item design which is replicated depending on how many list items are present. They are in a card view that supports light and dark mode-->
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,7 +8,7 @@
     android:textColor="@color/textColor"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
+<!--this is the button that supports toggling the delete function when a list item is selected-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="72dp"
@@ -20,7 +21,7 @@
         android:clickable="true"
         app:srcCompat="@drawable/ic_brush"
         android:focusable="true" />
-
+<!--This is the first text view which is on the top and left aligned it displays the paint scheme name-->
     <TextView
         android:id="@+id/schemeTextName"
         android:layout_marginStart="55dp"
@@ -38,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fab"
         tools:text="Some Text for design"/>
-
+    <!--This is the first text view which is under the first one and is less left aligned it displays the model used-->
     <TextView
         android:id="@+id/schemeModelUsed"
         android:layout_marginStart="65dp"

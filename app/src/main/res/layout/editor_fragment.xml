@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the editor fragment xml, which is the ui of the editor screen it is scrollable to accomodate alot of data-->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,43 +16,46 @@
         android:orientation="vertical">
 
 
-<!--        <ImageView-->
-<!--            android:id="@+id/variableImage"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="462dp"-->
-<!--            android:src="@drawable/mephiston"-->
-<!--            tools:ignore="ContentDescription">-->
 
-<!--        </ImageView>-->
+<!--this is the design i would like to use for a database image but in order to showcase the design ive just hardcoded an image there-->
+<!--        this is a horizontal scroll view that is designed to allow a gallery of different angles of a miniature so all details could be observed, however it is difficult to align properly so i removed it-->
+        <ImageView
+            android:id="@+id/mephistonimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="487dp"
 
-<!--        <RelativeLayout-->
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/mephiston" />
+        <!--        this is a horizontal scroll view that is designed to allow a gallery of different angles of a miniature so all details could be observed, however it is difficult to align properly so i removed it-->
+        <!--        <RelativeLayout-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="0dp"-->
 <!--            android:layout_weight="2">-->
 
 <!--        <HorizontalScrollView-->
 <!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="256dp">-->
+<!--            android:layout_height="256dp"-->
+<!--            tools:ignore="UselessParent">-->
 
 <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="match_parent">-->
 
-<!--    -->
 
-<!--        <ImageView-->
+<!--         -->
+
+<!--            <ImageView-->
 <!--            android:id="@+id/mephistonimg2"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            app:srcCompat="@drawable/mephiston"-->
 <!--            app:layout_constraintStart_toEndOf="@id/mephistonimg1"/>-->
-<!--        <ImageView-->
+<!--            <ImageView-->
 <!--            android:id="@+id/mephistonimg3"-->
 <!--            android:layout_width="wrap_content"-->
 <!--            android:layout_height="wrap_content"-->
 <!--            app:srcCompat="@drawable/mephiston"-->
 <!--            app:layout_constraintStart_toEndOf="@id/mephistonimg2"/>-->
-
 <!--            <ImageView-->
 <!--                android:id="@+id/mephistonimg4"-->
 <!--                android:layout_width="wrap_content"-->
@@ -63,7 +67,8 @@
 <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 <!--        </HorizontalScrollView>-->
 <!--        </RelativeLayout>-->
-
+<!--this is an example of an edit text field, which is given an id, they are constrained to fit in the page alligned with the other fields.
+this one is the paint scheme name, and it has cap sentances, text and card colour and it ignores autofill-->
         <EditText
         android:id="@+id/nameEditor"
         android:layout_width="match_parent"

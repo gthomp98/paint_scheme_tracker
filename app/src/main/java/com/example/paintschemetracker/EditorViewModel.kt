@@ -12,12 +12,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
+//This is the editor view model which represents the shown data for the editor fragment
 class EditorViewModel(app: Application): AndroidViewModel(app) {
 
+    //this gets an instance of our database and the miniature entity class
     private val database = AppDatabase.getInstance(app)
     val currentMiniature = MutableLiveData<MiniatureEntity>()
 
+    //this gets our miniature objects by their Ids
     fun getMiniatureById(miniatureId: Int){
     viewModelScope.launch{
 
@@ -33,7 +35,7 @@ class EditorViewModel(app: Application): AndroidViewModel(app) {
             }
         }
     }
-
+//This is the update miniature function, "it.name" is a value that if is returned empty, the id is deleted, if it is returned true, then the miniature object is inserted into the database
     fun updateMiniature() {
         currentMiniature.value?.let {
             it.name = it.name.trim()

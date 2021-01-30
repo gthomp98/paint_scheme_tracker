@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the menu options that are within the main menu.-->
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
+<!--this is the sample data menu item-->
     <item
         android:id="@+id/action_sample_data"
         android:textColor="@color/textColor"
         android:title="@string/add_sample_data" />
+    <!--this is the delete all menu item-->
     <item
         android:id="@+id/action_delete_all"
         android:textColor="@color/textColor"
         android:title="@string/delete_all_miniatures"/>
+    <!--this is the dark mode menu item-->
     <item
         android:id="@+id/action_dark_mode_switch"
         android:textColor="@color/textColor"
         android:title="@string/toggle_dark_mode"/>
-
+    <!--this is the light mode menu item-->
     <item
         android:id="@+id/action_light_mode_switch"
         android:textColor="@color/textColor"

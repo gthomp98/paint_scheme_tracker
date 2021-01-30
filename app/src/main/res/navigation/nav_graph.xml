@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--this is the nav graph that dictates which fragments interact with which when buttons are pressed to navigate around the application-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment2">
+<!--    This is the main fragment and if the edit miniature action is initialized then the editor fragment is navigated to-->
     <fragment
         android:id="@+id/mainFragment2"
         android:name="com.example.paintschemetracker.MainFragment"
@@ -13,6 +15,7 @@
             android:id="@+id/action_edit_miniature"
             app:destination="@id/editorFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/editorFragment"
         android:name="com.example.paintschemetracker.EditorFragment"
